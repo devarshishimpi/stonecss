@@ -4,6 +4,8 @@
 
 The Official Website Of Stone CSS. Docs will be soon available followed with Release.
 
+Made with ❤ By DVS Tech Labs
+
 ## Contributing
 
 ![Border](images/border.png)
