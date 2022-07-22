@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     background-color: #000;
+    font-family: Inter, sans-serif;
 }
 
 body {
@@ -8,7 +9,6 @@ body {
 }
 
 h1 {
-    font-family: Inter;
     font-size: 60px;
     color: #fff;
     display: block;
@@ -21,7 +21,6 @@ h1 {
 }
 
 h2 {
-    font-family: Inter;
     font-size: 20px;
     color: #fff;
     display: block;
@@ -35,7 +34,6 @@ h2 {
 
 h3 {
     color: #fff;
-    font-family: Inter;
     font-weight: 700;
     margin-top: 80px;
     font-size: 50px;
@@ -47,7 +45,6 @@ h4 {
     color: #82828a;
     font-size: 16px;
     font-weight: 400;
-    font-family: Inter;
     margin-top: 15px;
     line-height: 35px;
     transition: all .5s cubic-bezier(.05, .03, .35, 1);
@@ -55,7 +52,6 @@ h4 {
 }
 
 h5 {
-    font-family: Inter;
     color: #fff;
     font-size: 25px;
     margin-top: 20px;
@@ -63,7 +59,6 @@ h5 {
 }
 
 h6 {
-    font-family: Inter;
     color: #82828a;
     font-size: 16px;
     font-weight: 400;
@@ -74,18 +69,17 @@ h6 {
 
 h7 {
     color: #fff;
-    font-family: Inter;
     margin-top: 30px;
     font-size: 50px;
     text-align: center;
     display: block;
     font-weight: 900;
 }
+
 h8 {
     color: #82828a;
     font-size: 16px;
     font-weight: 400;
-    font-family: Inter;
     margin-top: 20px;
     line-height: 35px;
     text-align: center;
@@ -101,6 +95,21 @@ hr {
     height: 1px;
     background: #2b2c31;
     margin-bottom: 30px;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-animation: Ripple 600ms linear;
+            animation: Ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 #nav {
@@ -119,7 +128,6 @@ hr {
 
 #nav a {
     display: inline-block;
-    font-family: Inter;
     font-weight: 500;
     color: #82828a;
     margin-right: 75px;
@@ -136,7 +144,6 @@ hr {
     top: 36px;
     right: 13%;
     color: #8313f3;
-    font-family: Inter;
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
@@ -156,7 +163,8 @@ hr {
 }
 
 #logo svg {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
 }
 
 #features {
@@ -170,14 +178,15 @@ hr {
     -webkit-background-clip: text;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
+    color: transparent;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #8614f8), color-stop(.35, #8614f8), color-stop(.5, #b850f8), color-stop(.65, #8614f8), color-stop(1, #8614f8));
     background-size: 600% 600%;
     -webkit-animation: Shine 7s ease infinite;
-    -moz-animation: Shine 7s ease infinite;
     animation: Shine 7s ease infinite;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
 }
 
 .hover-animation {
@@ -188,27 +197,29 @@ hr {
     content: '';
     position: absolute;
     width: 100%;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
     height: 4px;
     bottom: 0;
     left: 0;
     background-color: #8614f8;
-    transform-origin: bottom right;
+    -webkit-transform-origin: bottom right;
+            transform-origin: bottom right;
+    transition: -webkit-transform 0.25s ease-out;
     transition: transform 0.25s ease-out;
-  }
-  
-.hover-animation:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-
+.hover-animation:hover:after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+}
 
 .cta {
     color: #fff;
-    font-family: Inter;
-    width: 190px;
-    height: 60px;
+    width: 200px;
     border-radius: 0 5px 5px 0;
     background: linear-gradient(180deg, #8614f8 0, #760be0 100%);
     text-align: center;
@@ -226,7 +237,7 @@ hr {
 
 .cta:hover {
     cursor: pointer;
-    opacity: .7;
+    opacity: .9;
 }
 
 .input {
@@ -236,7 +247,6 @@ hr {
     display: inline-block;
     background-color: #17181e;
     color: #fff;
-    font-family: Inter;
     text-indent: 20px;
     font-weight: 300;
     border-radius: 5px 0 0 5px;
@@ -255,12 +265,13 @@ hr {
     margin-right: auto;
     display: block;
     margin-top: 50px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
 }
 
 #main p, #main2 p {
     color: #8614f8;
-    font-family: Inter;
 }
 
 #base {
@@ -278,7 +289,8 @@ hr {
     bottom: 0;
     background-color: #202127;
     transition: all .5s cubic-bezier(.05, .03, .35, 1);
-    transform: translateZ(1px);
+    -webkit-transform: translateZ(1px);
+            transform: translateZ(1px);
     opacity: 1;
 }
 
@@ -287,7 +299,8 @@ hr {
     position: absolute;
     background-color: #202127;
     transition: all .5s cubic-bezier(.05, .03, .35, 1);
-    transform: translateZ(1px);
+    -webkit-transform: translateZ(1px);
+            transform: translateZ(1px);
     opacity: 1;
 }
 
@@ -298,7 +311,8 @@ hr {
     left: 5.75%;
     background-color: #202127;
     transition: all .5s cubic-bezier(.05, .03, .35, 1);
-    transform: translateZ(1px);
+    -webkit-transform: translateZ(1px);
+            transform: translateZ(1px);
     opacity: 1;
     border: 0;
 }
@@ -308,7 +322,8 @@ hr {
 }
 
 #cont {
-    perspective: 2000px;
+    -webkit-perspective: 2000px;
+            perspective: 2000px;
     display: block;
     position: absolute;
     margin: auto;
@@ -318,15 +333,18 @@ hr {
     bottom: 0;
     height: 100%;
     transition: all .5s cubic-bezier(.05, .03, .35, 1);
-    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
 }
 
 .three2 {
-    transform: rotateX(25deg) translateZ(10px) !important;
+    -webkit-transform: rotateX(25deg) translateZ(10px) !important;
+            transform: rotateX(25deg) translateZ(10px) !important;
 }
 
 .topon {
-    transform: translateZ(45px) translateY(-45px) !important;
+    -webkit-transform: translateZ(45px) translateY(-45px) !important;
+            transform: translateZ(45px) translateY(-45px) !important;
 }
 
 .fixme {
@@ -344,7 +362,8 @@ hr {
 #theeye {
     top: 0;
     opacity: 0;
-    transform: scale(.4);
+    -webkit-transform: scale(.4);
+            transform: scale(.4);
     transition: all .3s cubic-bezier(.02, .01, .15, 1);
     position: absolute;
     z-index: 9999;
@@ -353,7 +372,8 @@ hr {
 
 .theeyeoff {
     opacity: 0 !important;
-    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
 }
 
 #folder {
@@ -370,7 +390,8 @@ hr {
 }
 
 .eyesee {
-    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
+            transform: scale(1) !important;
     opacity: 1 !important;
 }
 
@@ -432,7 +453,6 @@ hr {
     width: 23%;
     margin-top: 9%;
     margin-left: 8.7%;
-    font-family: Inter;
     font-weight: 500;
     color: #fff;
     font-size: .8vw;
@@ -450,7 +470,6 @@ hr {
     width: 23%;
     margin-top: 9%;
     margin-left: 40%;
-    font-family: Inter;
     font-weight: 500;
     color: #717178;
     font-size: .8vw;
@@ -496,7 +515,6 @@ hr {
 #left-footer {
     color: #82828a;
     font-size: 14px;
-    font-family: Inter;
     font-weight: 500;
     display: inline-block;
 }
@@ -507,11 +525,9 @@ hr {
 }
 
 #right-footer {
-    display: inline-block;
     float: right;
     color: #82828a;
     font-size: 14px;
-    font-family: Inter;
     font-weight: 500;
     margin-top: 3px;
 }
@@ -554,38 +570,38 @@ hr {
     #second {
         margin-top: 1100px;
     }
-    
+
     h1 {
         font-size: 50px;
     }
-    
+
     h2 {
         font-size: 18px;
     }
-    
+
     h3 {
         margin-top: 60px;
         font-size: 40px;
     }
-    
+
     h4 {
         font-size: 14px;
         width: 400px;
     }
-    
+
     h5 {
         font-size: 22px;
     }
-    
+
     h6 {
         font-size: 14px;
         width: 250px;
     }
-    
+
     h7 {
         font-size: 40px;
     }
-    
+
     h8 {
         font-size: 16px;
     }
@@ -596,54 +612,56 @@ hr {
         font-size: 14px;
         width: 150px;
     }
-    
+
     .input {
         height: 55px;
         font-size: 14px;
         width: 250px;
     }
-    
+
     #nav a {
         font-size: 14px;
     }
-    
+
     #unlock {
         font-size: 14px;
     }
-    
+
     #folder, #theeye {
         width: 50px;
     }
-    
+
     #left-footer {
         font-size: 14px !important;
     }
-    
+
     #right-footer {
         font-size: 14px !important;
     }
-    
+
     #footer {
-        width: 95%
+        width: 95% 
     }
-    
+
     #second {
         margin-top: 100px;
     }
-    
+
     #section1 {
         display: none;
-    } 
+    }
 }
 
 @media screen and (max-width:820px) {
     #unlock {
         display: none;
     }
+
     #nav {
         margin-right: 50px;
         left: unset !important;
     }
+
     #nav a {
         margin-right: 50px;
     }
@@ -652,6 +670,8 @@ hr {
 @media screen and (max-width:762px) {
     #left-footer {
         display: block !important;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
         margin-left: auto;
         margin-right: auto;
@@ -661,13 +681,15 @@ hr {
     #right-footer {
         display: block !important;
         float: none !important;
+        width: -webkit-max-content;
+        width: -moz-max-content;
         width: max-content;
         margin-left: auto;
         margin-right: auto;
     }
 
     #footer {
-        width: 85%
+        width: 85% 
     }
 }
 
@@ -675,7 +697,7 @@ hr {
     h1 {
         font-size: 45px;
     }
-    
+
     h2 {
         font-size: 16px;
     }
@@ -697,7 +719,7 @@ hr {
 
 @media screen and (max-width:525px) {
     h1 {
-        width: 85%
+        width: 85% 
     }
 
     h2 {
@@ -731,12 +753,12 @@ hr {
 
     h6 {
         font-size: 14px;
-        width: 90%
+        width: 90% 
     }
 
     .section {
         display: block !important;
-        margin-left: 5%
+        margin-left: 5% 
     }
 
     #second {
@@ -768,7 +790,7 @@ hr {
     }
 
     #main, #main2 {
-        width: 85%
+        width: 85% 
     }
 
     .input {
@@ -784,7 +806,7 @@ hr {
 
     h8 {
         font-size: 14px;
-        width: 85%
+        width: 85% 
     }
 }
 
@@ -793,7 +815,7 @@ hr {
         margin-top: 50px;
         font-size: 35px;
     }
-    
+
     h7 {
         font-size: 35px;
     }
@@ -812,7 +834,6 @@ hr {
 
 #tos {
     color: #fff;
-    font-family: Inter;
     text-align: left;
     margin-top: 100px;
     width: 85%;
@@ -838,27 +859,42 @@ hr {
 
 @-webkit-keyframes Shine {
     0% {
-    background-position: 0 50%}
-50% {
-    background-position: 100% 50%}
-100% {
-    background-position: 0 50%}
-}
-
-@-moz-keyframes Shine {
-    0% {
-    background-position: 0 50%}
-50% {
-    background-position: 100% 50%}
-100% {
-    background-position: 0 50%}
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
 }
 
 @keyframes Shine {
     0% {
-    background-position: 0 50%}
-50% {
-    background-position: 100% 50%}
-100% {
-    background-position: 0 50%}
+        background-position: 0 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0 50%
+    }
+}
+
+@-webkit-keyframes Ripple {
+    to {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0;
+    }
+}
+
+@keyframes Ripple {
+    to {
+      -webkit-transform: scale(4);
+              transform: scale(4);
+      opacity: 0;
+    }
 }
