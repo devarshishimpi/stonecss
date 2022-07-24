@@ -549,7 +549,7 @@ span.ripple {
 /* styling the recaptcha */
 #recaptcha{
     margin-top: 2rem;
-    display: none;
+ 
     transition: all .4s ease-in;
 }
 .show{
