@@ -546,6 +546,13 @@ span.ripple {
     opacity: .6;
 }
 
+/* styling the recaptcha */
+#recaptcha{
+    margin-top: 2rem;
+    display: none;
+    transition: all .4s ease-in;
+}
+
 @media screen and (max-width:1190px) {
     #logo {
         margin-left: 50px;

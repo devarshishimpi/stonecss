@@ -24,3 +24,5 @@ const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
     button.addEventListener("click", createRipple);
 }
+
+// displaying the recaptcha when the user clicks on the input field
