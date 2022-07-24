@@ -481,7 +481,7 @@ span.ripple {
     color: #fff !important;
 }
 
-#second {
+#feature {
     margin-top: 100px;
 }
 
@@ -555,7 +555,7 @@ span.ripple {
         right: 50px;
     }
 
-    #second {
+    #feature {
         margin-top: 1200px;
     }
 }
@@ -567,7 +567,7 @@ span.ripple {
 }
 
 @media screen and (max-width:1000px) {
-    #second {
+    #feature {
         margin-top: 1100px;
     }
 
@@ -643,7 +643,7 @@ span.ripple {
         width: 95% 
     }
 
-    #second {
+    #feature {
         margin-top: 100px;
     }
 
@@ -761,7 +761,7 @@ span.ripple {
         margin-left: 5% 
     }
 
-    #second {
+    #feature {
         margin-top: 75px;
     }
 
