@@ -552,6 +552,9 @@ span.ripple {
     display: none;
     transition: all .4s ease-in;
 }
+.show{
+    display: block;
+}
 
 @media screen and (max-width:1190px) {
     #logo {

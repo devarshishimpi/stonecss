@@ -26,3 +26,9 @@ for (const button of buttons) {
 }
 
 // displaying the recaptcha when the user clicks on the input field
+
+const emailInput = document.getElementById('emailInput');
+const recaptcha =   document.getElementById('recaptcha');
+emailInput.addEventListener('change' , ()=>{
+  recaptcha.classList.toggle('show');
+})
