@@ -24,3 +24,11 @@ const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
     button.addEventListener("click", createRipple);
 }
+
+// displaying the recaptcha when the user clicks on the input field
+
+const emailInput = document.getElementById('emailInput');
+const recaptcha =   document.getElementById('recaptcha');
+emailInput.addEventListener('click' , ()=>{
+  recaptcha.classList.toggle('show');
+})
