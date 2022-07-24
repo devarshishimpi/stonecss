@@ -29,6 +29,6 @@ for (const button of buttons) {
 
 const emailInput = document.getElementById('emailInput');
 const recaptcha =   document.getElementById('recaptcha');
-emailInput.addEventListener('change' , ()=>{
+emailInput.addEventListener('click' , ()=>{
   recaptcha.classList.toggle('show');
 })
