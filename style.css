@@ -548,9 +548,9 @@ span.ripple {
 
 /* styling the recaptcha */
 #recaptcha{
-    margin-top: 2rem;
+    margin-top: 20px;
     display: none;
-    transition: all .4s ease-in;
+    transition: all 1s ease;
 }
 .show{
     display: block !important;
