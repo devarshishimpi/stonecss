@@ -4,8 +4,6 @@
 
 The official website Of Stone CSS. Docs will be soon available followed with release.
 
-<a href="https://www.producthunt.com/posts/stone-css?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-stone&#0045;css" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=353608&theme=light" alt="Stone&#0032;CSS - A&#0032;Revolutionary&#0044;&#0032;Unbreakable&#0032;CSS&#0032;framework | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
 ![Border](images/border.png)
 ## Contributing
 
