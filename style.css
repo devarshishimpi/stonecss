@@ -174,8 +174,8 @@ span.ripple {
 
 .shine {
     -moz-background-clip: text;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
     color: transparent;
