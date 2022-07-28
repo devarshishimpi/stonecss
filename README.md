@@ -4,6 +4,8 @@
 
 The official website Of Stone CSS. Docs will be soon available followed with release.
 
+Please give this repo a ⭐ it really helps us!
+
 ![Border](images/border.png)
 ## Contributing
 
