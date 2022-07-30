@@ -1,3 +1,5 @@
+// ripple effect on get early access button
+
 function createRipple(event) {
     const button = event.currentTarget;
   
