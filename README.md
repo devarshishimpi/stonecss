@@ -4,6 +4,8 @@
 
 The official website Of Stone CSS. Docs will be soon available followed with release.
 
+You can find the repository for Stone CSS Framework at <a href="https://github.com/devarshishimpi/Stone-CSS-Framework" target="_blank">Github</a>
+
 Please give this repo a ⭐ it really helps us!
 
 ![Border](images/border.png)
