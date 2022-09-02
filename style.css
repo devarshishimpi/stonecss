@@ -809,6 +809,9 @@ span.ripple {
 }
 
 @media screen and (max-width:400px) {
+    h1 {
+        font-size: 33px;
+    }
     h2 {
         width: 90%;
         line-height: 30px;
@@ -823,7 +826,7 @@ span.ripple {
 @media screen and (max-width:360px) {
     h1 {
         margin-top: 50px;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     h7 {
