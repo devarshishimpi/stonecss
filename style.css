@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
 }
 
+
 h1 {
     font-size: 60px;
     color: #fff;
@@ -845,8 +846,29 @@ span.ripple {
     }
 }
 
-#tos {
-    color: #fff;
+/* privacy policy */
+p{
+    color: white;
+}
+
+
+
+#policy li{
+    color: #82828a;
+}
+
+td{
+    padding: 8px;
+}
+ 
+table{
+border: 1px solid white;
+padding: 1em;
+}
+
+
+#policy{
+    color: #82828a;
     text-align: left;
     margin-top: 100px;
     width: 85%;
@@ -854,13 +876,53 @@ span.ripple {
     margin-right: auto;
 }
 
+#policy h2{
+    color: white;
+}
+
+ #policy p {
+    color: #82828a;
+ }
+
+ small{
+    color: #82828a;
+ }
+#tos li{
+    color: white;
+}
+
+
+#toc{
+    list-style: none;
+    text-align: center;
+}
+
+#toc a{
+    color: white;
+}
+#toc a:hover{
+    color: #760be0;
+}
+
+
+#tos {
+    text-align: left;
+    margin-top: 100px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tos h2{
+    color: white;
+}
+#tos li{
+    color: #82828a;
+}
 #tos p {
     color: #82828a;
 }
 
-#tos a {
-    color: #fff !important;
-}
+
 
 #tos b, strong {
     color: #fff !important;
