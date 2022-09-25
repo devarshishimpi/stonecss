@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     background-color: #000;
     font-family: Inter, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -104,18 +105,50 @@ span.ripple {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.header {
+    width: 75%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    margin: 0 auto;
+    margin-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 18;
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 199;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hamburger > div {
+    width: 30px;
+    height: 1.6px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger > div:not(.hamburger > div:last-child) {
+    margin-bottom: 6px;
+}
+
 #nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: -23px;
-    vertical-align: bottom;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
     margin-left: auto;
-    margin-right: auto;
 }
 
 #nav a {
@@ -129,6 +162,41 @@ span.ripple {
 
 #nav a:last-child {
     margin-right: 0 !important;
+}
+
+#mobilenav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+#mobilenav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #82828a;
+    font-size: 16px;
+}
+
+.hamactive > .line1 {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.hamactive > .line2 {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.hamactive > .line3 {
+    transform: rotate(-45deg) translateY(-10px);
 }
 
 #unlock {
@@ -145,13 +213,6 @@ span.ripple {
     margin-bottom: -4px;
     width: 17px;
     margin-right: 2px;
-}
-
-#logo {
-    display: inline-block;
-    margin-left: 13%;
-    margin-top: 30px;
-    vertical-align: bottom;
 }
 
 #logo svg {
@@ -534,7 +595,7 @@ span.ripple {
     margin-right: 0;
 }
 
-#footer a:hover, #nav a:hover {
+#footer a:hover, #nav a:hover, #mobilenav a:hover {
     opacity: .6;
 }
 
@@ -549,10 +610,6 @@ span.ripple {
 }
 
 @media screen and (max-width:1190px) {
-    #logo {
-        margin-left: 50px;
-    }
-
     #unlock {
         right: 50px;
     }
@@ -598,6 +655,10 @@ span.ripple {
     h6 {
         font-size: 14px;
         width: 250px;
+    }
+
+    h7 {
+        font-size: 40px;
     }
 
     h8 {
@@ -648,6 +709,22 @@ span.ripple {
     #section1 {
         display: none;
     }
+}
+
+@media screen and (max-width: 835px) {
+    #nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header {
+        width: 90%;
+        justify-content: space-between;
+    }
+    
 }
 
 @media screen and (max-width:820px) {
@@ -738,10 +815,6 @@ span.ripple {
     #nav {
         margin-right: 30px;
     }
-
-    #logo {
-        margin-left: 30px;
-    }
 }
 
 @media screen and (max-width:500px) {
@@ -817,15 +890,8 @@ span.ripple {
         font-size: 30px;
     }
 
-    #nav {
-        display: none;
-    }
-
-    #logo {
-        margin: auto;
-        text-align: center;
-        margin-top: 20px;
-        display: block;
+    h7 {
+        font-size: 35px;
     }
 }
 
