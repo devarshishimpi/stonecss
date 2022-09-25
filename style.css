@@ -68,15 +68,6 @@ h6 {
     margin-top: 15px;
 }
 
-h7 {
-    color: #fff;
-    margin-top: 30px;
-    font-size: 50px;
-    text-align: center;
-    display: block;
-    font-weight: 900;
-}
-
 h8 {
     color: #82828a;
     font-size: 16px;
@@ -609,10 +600,6 @@ span.ripple {
         width: 250px;
     }
 
-    h7 {
-        font-size: 40px;
-    }
-
     h8 {
         font-size: 16px;
     }
@@ -828,10 +815,6 @@ span.ripple {
     h1 {
         margin-top: 50px;
         font-size: 30px;
-    }
-
-    h7 {
-        font-size: 35px;
     }
 
     #nav {
