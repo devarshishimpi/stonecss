@@ -4,11 +4,11 @@
 
 Visit at <a href="https://stonecss.com" target="_blank">Stonecss.com</a>
 
-The official website Of Stone CSS. Docs will be soon available followed with release.
+The official website Of Stone CSS. Docs will be soon available, followed with release.
 
-You can find the repository for Stone CSS Framework at <a href="https://github.com/devarshishimpi/Stone-CSS-Framework" target="_blank">Github</a>
+You can find the repository for Stone CSS Framework at <a href="https://github.com/devarshishimpi/Stone-CSS-Framework" target="_blank">Github</a>.
 
-Please give this repo a ⭐ it really helps us!
+Please give this repo a ⭐, it really helps us!
 
 ![Border](images/border.png)
 ## Contributing
@@ -26,7 +26,7 @@ If you have any feedback, please reach out to us at devarshishimpi@gmail.com
 
 ## Support
 
-If you would like to support me, you can support on any of the below platforms.
+If you would like to support me, you can support on any of the platforms below:
 
 ![Border](images/border.png)
 <a href="https://www.vultr.com/?ref=9043736" target="_blank"><img src="images/vultr-try.png"/></a>
