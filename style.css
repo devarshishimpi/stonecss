@@ -603,7 +603,7 @@ span.ripple {
 #recaptcha{
     margin-top: 20px;
     display: none;
-    transition: all 1s ease;
+    transition: all 1s ease ;
 }
 .show{
     display: block !important;
@@ -625,7 +625,7 @@ span.ripple {
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     #feature {
         margin-top: 1100px;
     }
@@ -742,7 +742,7 @@ span.ripple {
     }
 }
 
-@media screen and (max-width:762px) {
+@media screen and (max-width:768px) {
     #left-footer {
         display: block !important;
         width: -webkit-max-content;
