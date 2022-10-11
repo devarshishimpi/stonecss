@@ -740,6 +740,15 @@ span.ripple {
     #nav a {
         margin-right: 50px;
     }
+    #footer {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    #left-footer {
+        margin-top: 20px;
+    }
+
 }
 
 @media screen and (max-width:768px) {
