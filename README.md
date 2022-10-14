@@ -10,12 +10,12 @@ You can find the repository for Stone CSS Framework at <a href="https://github.c
 
 Please give this repo a ⭐, it really helps us!
 
-![Border](images/border.png)
-
 ## Wait. Where is the framework? and where is it's source code repository?
 
 I am constantly working on it during my free time. Thank you for your patience. I expect it to release it by Jan 2023, depending on the time that permits me.
 ## Contributing
+
+![Border](images/border.png)
 
 Contributions are always welcome!
 
