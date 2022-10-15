@@ -9,4 +9,4 @@ Please note we have a [Code of Conduct](CODE_OF_CONDUCT.md), please follow it in
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 2. Update `README.md` with details of changes to the interface: this includes new environment variables, exposed ports, useful file locations and container parameters.
 3. Increase the version numbers in any examples files and the `README.md` to the new version that this PR would represent.
-4. You may merge the PR once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer merge it for you.
+4. You may merge the PR once you have your commits reviewed by a Member from the team

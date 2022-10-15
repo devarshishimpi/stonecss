@@ -2,11 +2,13 @@ body, html {
     margin: 0;
     background-color: #000;
     font-family: Inter, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     overflow-x: hidden;
 }
+
 
 h1 {
     font-size: 60px;
@@ -67,15 +69,6 @@ h6 {
     margin-top: 15px;
 }
 
-h7 {
-    color: #fff;
-    margin-top: 30px;
-    font-size: 50px;
-    text-align: center;
-    display: block;
-    font-weight: 900;
-}
-
 h8 {
     color: #82828a;
     font-size: 16px;
@@ -112,18 +105,50 @@ span.ripple {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.header {
+    width: 75%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    margin: 0 auto;
+    margin-top: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 18;
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: relative;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 199;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hamburger > div {
+    width: 30px;
+    height: 1.6px;
+    background-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger > div:not(.hamburger > div:last-child) {
+    margin-bottom: 6px;
+}
+
 #nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: -23px;
-    vertical-align: bottom;
-    position: absolute;
-    left: 0;
-    right: 0;
+    position: relative;
     margin-left: auto;
-    margin-right: auto;
 }
 
 #nav a {
@@ -137,6 +162,41 @@ span.ripple {
 
 #nav a:last-child {
     margin-right: 0 !important;
+}
+
+#mobilenav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    top: 0;
+    left: -100%;
+    transition: left 0.5s ease-in-out;
+}
+
+#mobilenav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #82828a;
+    font-size: 16px;
+}
+
+.hamactive > .line1 {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.hamactive > .line2 {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.hamactive > .line3 {
+    transform: rotate(-45deg) translateY(-10px);
 }
 
 #unlock {
@@ -153,13 +213,6 @@ span.ripple {
     margin-bottom: -4px;
     width: 17px;
     margin-right: 2px;
-}
-
-#logo {
-    display: inline-block;
-    margin-left: 13%;
-    margin-top: 30px;
-    vertical-align: bottom;
 }
 
 #logo svg {
@@ -542,7 +595,7 @@ span.ripple {
     margin-right: 0;
 }
 
-#footer a:hover, #nav a:hover {
+#footer a:hover, #nav a:hover, #mobilenav a:hover {
     opacity: .6;
 }
 
@@ -550,17 +603,13 @@ span.ripple {
 #recaptcha{
     margin-top: 20px;
     display: none;
-    transition: all 1s ease;
+    transition: all 1s ease ;
 }
 .show{
     display: block !important;
 }
 
 @media screen and (max-width:1190px) {
-    #logo {
-        margin-left: 50px;
-    }
-
     #unlock {
         right: 50px;
     }
@@ -576,7 +625,7 @@ span.ripple {
     }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     #feature {
         margin-top: 1100px;
     }
@@ -662,6 +711,22 @@ span.ripple {
     }
 }
 
+@media screen and (max-width: 835px) {
+    #nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .header {
+        width: 90%;
+        justify-content: space-between;
+    }
+    
+}
+
 @media screen and (max-width:820px) {
     #unlock {
         display: none;
@@ -675,9 +740,18 @@ span.ripple {
     #nav a {
         margin-right: 50px;
     }
+    #footer {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    #left-footer {
+        margin-top: 20px;
+    }
+
 }
 
-@media screen and (max-width:762px) {
+@media screen and (max-width:768px) {
     #left-footer {
         display: block !important;
         width: -webkit-max-content;
@@ -749,10 +823,6 @@ span.ripple {
 
     #nav {
         margin-right: 30px;
-    }
-
-    #logo {
-        margin-left: 30px;
     }
 }
 
@@ -832,21 +902,31 @@ span.ripple {
     h7 {
         font-size: 35px;
     }
-
-    #nav {
-        display: none;
-    }
-
-    #logo {
-        margin: auto;
-        text-align: center;
-        margin-top: 20px;
-        display: block;
-    }
 }
 
-#tos {
-    color: #fff;
+/* privacy policy */
+p{
+    color: white;
+}
+
+
+
+#policy li{
+    color: #82828a;
+}
+
+td{
+    padding: 8px;
+}
+ 
+table{
+border: 1px solid white;
+padding: 1em;
+}
+
+
+#policy{
+    color: #82828a;
     text-align: left;
     margin-top: 100px;
     width: 85%;
@@ -854,13 +934,53 @@ span.ripple {
     margin-right: auto;
 }
 
+#policy h2{
+    color: white;
+}
+
+ #policy p {
+    color: #82828a;
+ }
+
+ small{
+    color: #82828a;
+ }
+#tos li{
+    color: white;
+}
+
+
+#toc{
+    list-style: none;
+    text-align: center;
+}
+
+#toc a{
+    color: white;
+}
+#toc a:hover{
+    color: #760be0;
+}
+
+
+#tos {
+    text-align: left;
+    margin-top: 100px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tos h2{
+    color: white;
+}
+#tos li{
+    color: #82828a;
+}
 #tos p {
     color: #82828a;
 }
 
-#tos a {
-    color: #fff !important;
-}
+
 
 #tos b, strong {
     color: #fff !important;

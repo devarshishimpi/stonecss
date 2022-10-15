@@ -31,6 +31,32 @@ for (const button of buttons) {
 
 const emailInput = document.getElementById('emailInput');
 const recaptcha =   document.getElementById('recaptcha');
-emailInput.addEventListener('click' , ()=>{
+emailInput?.addEventListener('click' , ()=>{
   recaptcha.classList.toggle('show');
+})
+
+// mobile hamburger opening closing
+
+const hamburger = document.querySelector('.hamburger');
+const line1 = document.querySelector('.line1');
+const line2 = document.querySelector('.line2');
+const line3 = document.querySelector('.line3');
+const mobilenav = document.querySelector('#mobilenav');
+const body = document.body;
+body.addEventListener('click', (e) => {
+  if (e.target === hamburger || e.target === line1 || e.target === line2 || e.target === line3) {
+    if (hamburger.classList.contains('hamactive')) {
+      hamburger.classList.remove('hamactive')
+      mobilenav.style.left = '-100%'
+      body.style.overflowY = 'auto';
+    } else {
+      hamburger.classList.add('hamactive')
+      body.style.overflowY = 'hidden';
+      mobilenav.style.left = '0'
+    }
+  } else {
+    hamburger.classList.remove('hamactive')
+    body.style.overflowY = 'auto';
+    mobilenav.style.left = '-100%'
+  }
 })

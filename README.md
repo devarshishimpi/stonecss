@@ -4,14 +4,16 @@
 
 Visit at <a href="https://stonecss.com" target="_blank">Stonecss.com</a>
 
-The official website Of Stone CSS. Docs will be soon available followed with release.
+The official website Of Stone CSS. Docs will be soon available, followed with release.
 
-You can find the repository for Stone CSS Framework at <a href="https://github.com/devarshishimpi/Stone-CSS-Framework" target="_blank">Github</a>
+Please give this repo a ⭐, it really helps us!
 
-Please give this repo a ⭐ it really helps us!
+## Wait. Where is the framework? and where is it's source code repository?
+
+I am constantly working on it during my free time. Thank you for your patience. I expect it to release it by Jan 2023, depending on the time that permits me.
+## Contributing
 
 ![Border](images/border.png)
-## Contributing
 
 Contributions are always welcome!
 
@@ -26,7 +28,7 @@ If you have any feedback, please reach out to us at devarshishimpi@gmail.com
 
 ## Support
 
-If you would like to support me, you can support on any of the below platforms.
+If you would like to support me, you can support on any of the platforms below:
 
 ![Border](images/border.png)
 <a href="https://www.vultr.com/?ref=9043736" target="_blank"><img src="images/vultr-try.png"/></a>
@@ -35,3 +37,4 @@ If you would like to support me, you can support on any of the below platforms.
 <a href="https://www.buymeacoffee.com/dvstech" target="_blank"><img src="images/buymeacoffee-try.png"/></a>
 <a href="https://presearch.com/signup?rid=4339531" target="_blank"><img src="images/presearch-try.png"/></a>
 <a href="https://railway.app?referralCode=tXRquz" target="_blank"><img src="images/railway-try.png"/></a>
+<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/wlfqn2dwmbvrdld8z2gk?t=default" target="_blank"><img src="images/cloudinary-try.png"/></a>
