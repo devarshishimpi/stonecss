@@ -609,6 +609,14 @@ span.ripple {
     display: block !important;
 }
 
+/* Table content */
+.tablecontent{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    padding: 8px;
+}
+
 @media screen and (max-width:1190px) {
     #unlock {
         right: 50px;
@@ -952,11 +960,13 @@ padding: 1em;
 
 #toc{
     list-style: none;
-    text-align: center;
+   
 }
 
 #toc a{
-    color: white;
+    color: rgb(63, 159, 255);
+    text-decoration: none;
+    
 }
 #toc a:hover{
     color: #760be0;
@@ -979,8 +989,6 @@ padding: 1em;
 #tos p {
     color: #82828a;
 }
-
-
 
 #tos b, strong {
     color: #fff !important;
