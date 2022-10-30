@@ -27,6 +27,9 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
+        <button id = "btnScrollToTop">
+            <i class = "material-icons">↑</i>
+          </button>
         <div class="header">
             <div id="logo">
                 <a href="">
@@ -110,6 +113,16 @@
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);
                 })();
+            </script>
+            <script>
+                const btnScrollToTop = document.getElementById("btnScrollToTop");
+                btnScrollToTop.addEventListener("click", function(){
+                  window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+                  });
+                });
             </script>
         <!--End of Tawk.to Script-->
         <script src="index.js"></script>
