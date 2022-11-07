@@ -9,6 +9,37 @@ body {
     overflow-x: hidden;
 }
 
+/* scroll-up button starts */
+
+#btnScrollToTop {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #8614f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#btnScrollToTop:hover {
+    width: 50px;
+    height: 50px;
+    background: #b41919;
+}
+
+#btnScrollToTop:active {
+    background: rgb(12, 214, 12);
+}
+
+
+/* scroll-up button ends */
+
 
 h1 {
     font-size: 60px;
@@ -609,6 +640,14 @@ span.ripple {
     display: block !important;
 }
 
+/* Table content */
+.tablecontent{
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    padding: 8px;
+}
+
 @media screen and (max-width:1190px) {
     #unlock {
         right: 50px;
@@ -952,11 +991,13 @@ padding: 1em;
 
 #toc{
     list-style: none;
-    text-align: center;
+   
 }
 
 #toc a{
-    color: white;
+    color: rgb(63, 159, 255);
+    text-decoration: none;
+    
 }
 #toc a:hover{
     color: #760be0;
@@ -979,8 +1020,6 @@ padding: 1em;
 #tos p {
     color: #82828a;
 }
-
-
 
 #tos b, strong {
     color: #fff !important;

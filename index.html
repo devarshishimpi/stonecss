@@ -27,6 +27,9 @@
         crossorigin="anonymous"></script>
     </head>
     <body>
+        <button id = "btnScrollToTop">
+            <i class = "material-icons">↑</i>
+          </button>
         <div class="header">
             <div id="logo">
                 <a href="">
@@ -55,7 +58,7 @@
         <h1>A <span class="shine hover-animation">Revolutionary</span>, <i>Unbreakable</i><br>CSS framework.</h1>
         <br>
         <h2>Stone CSS is a powerful, extensible, and feature-packed frontend toolkit.</h2>
-        <h8>Sign up to the waitlist to be the first to try out!</h8>       
+        <h8>Sign up for the waitlist to be the first one to try out!</h8>       
         <form id="main" netlify data-netlify="true"   data-netlify-recaptcha="true">
             <input class="input" name="MERGE0" type="email" placeholder="Your email" id="emailInput" required>
             <button class="cta" type="submit">Get early access</button>
@@ -110,6 +113,16 @@
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);
                 })();
+            </script>
+            <script>
+                const btnScrollToTop = document.getElementById("btnScrollToTop");
+                btnScrollToTop.addEventListener("click", function(){
+                  window.scrollTo({
+                  top: 0,
+                  left: 0,
+                  behavior: "smooth"
+                  });
+                });
             </script>
         <!--End of Tawk.to Script-->
         <script src="index.js"></script>
