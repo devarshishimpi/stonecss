@@ -8,9 +8,16 @@ The official website Of Stone CSS. Docs will be soon available, followed with re
 
 Please give this repo a ⭐, it really helps us!
 
+![Border](images/border.png)
+
 ## Wait. Where is the framework? and where is it's source code repository?
 
-I am constantly working on it during my free time. Thank you for your patience. I expect it to release it by Jan 2023, depending on the time that permits me.
+I am constantly working on it during my free time. Thank you for your patience. I expect it to release it by April 2023, depending on the time that permits me. Sorry for the delay.
+
+## What can we expect in the initial release?
+
+Different components and templates to choose from ( Around 200-300 components ). Not too many at start. But expect it to increase overtime!!!
+
 ## Contributing
 
 ![Border](images/border.png)
