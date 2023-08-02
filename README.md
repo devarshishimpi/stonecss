@@ -1,18 +1,12 @@
 # Stone CSS Website
 
-**Made with ❤ By DVS Tech Labs**
-
-Visit at <a href="https://stonecss.com" target="_blank">Stonecss.com</a>
-
-The official website Of Stone CSS. Docs will be soon available, followed with release.
-
-Please give this repo a ⭐, it really helps us!
+**Made with ❤ By Devarshi Shimpi**
 
 ![Border](images/border.png)
 
-## Wait. Where is the framework? and where is it's source code repository?
+## Wait. Where is the framework? and where is it's source code repository? Why is the project archived?
 
-I am constantly working on it during my free time. Thank you for your patience. I expect it to release it by April 2023, depending on the time that permits me. Sorry for the delay.
+Currently, the prototype is ready. I previously owned the domain name called as **stonecss(dot)com** but now as expired. I couldn't find enough time to continue working on it. If anyone wants to continue progressing with it. Hit me up on my socials in DMs/send me an email. I will unarchive it once development resumes in the future! Thanks for understanding! 🙏
 
 ## What can we expect in the initial release?
 
@@ -42,7 +36,3 @@ If you would like to support me, you can support on any of the platforms below:
 <a href="https://dvsdonatebtc.netlify.app/" target="_blank"><img src="images/btc-try.png"/></a>
 <a href="https://www.patreon.com/dvstech" target="_blank"><img src="images/patreon-try.png"/></a>
 <a href="https://www.buymeacoffee.com/dvstech" target="_blank"><img src="images/buymeacoffee-try.png"/></a>
-<a href="https://presearch.com/signup?rid=4339531" target="_blank"><img src="images/presearch-try.png"/></a>
-<a href="https://railway.app?referralCode=tXRquz" target="_blank"><img src="images/railway-try.png"/></a>
-<a href="https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/wlfqn2dwmbvrdld8z2gk?t=default" target="_blank"><img src="images/cloudinary-try.png"/></a>
-<a href="https://m.do.co/c/645d44d1a7a1" target="_blank"><img src="images/digitalocean-try.png"/></a>
